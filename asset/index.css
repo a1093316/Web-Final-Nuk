@@ -1,0 +1,781 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* start css */
+/* nav-bar */
+a{
+    text-decoration: none;
+}
+.navbar{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1440px;
+    height: 88px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .logo{
+    position: absolute;
+    top: 24px;
+    left: 62px;
+    width: 119px;
+    height: 40px;
+    background: transparent url('img/logo.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.navbar .nav-link{
+    position: absolute;
+    top: 32px;
+    left: 786px;
+    right: 108px;
+}
+.navbar .nav-link ul{
+    top: 32px;
+    left: 786px;
+    height: 24px;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .nav-link ul li{
+    top: 34px;
+    left: 1090px;
+    width: 64px;
+    height: 22px;
+    text-align: center;
+    font: normal normal normal 12px/3 Noto Sans;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.navbar .nav-link ul li a{
+    text-decoration: none;
+}
+.navbar .nav-link ul li a,a:link,a:visited{
+    color:#3A3A3A
+}
+.navbar .nav-link ul li#homepage{
+    color: #F9C745;
+}
+.nav-bar .nav-link ul li{
+    padding-left: 50px;
+}
+.navbar .nav-link ul li#ex:hover{
+    width: 140px;
+    height: 38px;
+    background: #F9C745 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    opacity: 1;
+    cursor: pointer;
+}
+.navbar .nav-link ul li#painting{
+    width: 140px;
+    height: 38px;
+    background: #F9C745 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    opacity: 1;
+    cursor: pointer;
+}
+.navbar .nav-link ul li#painting:hover{
+    background: #F9C745 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 0px #3A3A3A;
+    border-radius: 23px;
+    opacity: 1;
+}
+.home{
+    position: absolute;
+    top: 88px;
+    left: 0px;
+    width: 1440px;
+    height: 810px;
+    background: transparent url('img/home.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.home .fixed-btn .btn{
+    position: absolute;
+    top: 657.8px;
+    left: 1238px;
+    width: 140px;
+    height: 152px;
+    background: transparent url('img/btn2.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.home .fixed-btn .btn:hover{
+    cursor: pointer;
+    width: 140px;
+    height: 152px;
+    background: transparent url('img/btn.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.home .fixed-btn .path1{
+    position: absolute;
+    top: 602.8px;
+    left: 1226px;
+    width: 164px;
+    height: 47px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #3A3A3A;
+    opacity: 1;
+}
+.home .fixed-btn .path1 h2{
+    position: absolute;
+    top: 12px;
+    left: 23px;
+    width: 118px;
+    height: 22px;
+    
+    
+}
+
+.about{
+    position: absolute;
+    top: 898px;
+    left: 0px;
+    width: 1440px;
+    height: 606px;
+    opacity: 1;
+}
+.about .home01{
+    position: absolute;
+    top: 80px;
+    left: 172px;
+    width: 648px;
+    height: 486px;
+    background: transparent url('img/home01.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.about .txt{
+    position: absolute;
+    top: 178px;
+    left: 868px;
+    width: 385px;
+    height: 315px;
+}
+.about .txt h2{
+    width: 74px;
+    height: 39px;
+    text-align: center;
+    font: normal normal bold 24px/39px Kalam;
+    letter-spacing: 0px;
+    color: #F9C745;
+    opacity: 1;
+}
+.about .txt h1{
+    width: 377px;
+    height: 51px;
+    text-align: left;
+    font: normal normal bold 32px/51px Kalam;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.about .txt p{
+    padding-top: 11px;
+    width: 385px;
+    height: 214px;
+    text-align: left;
+    font: normal normal normal 16px/32px Noto Sans;
+    letter-spacing: 1.28px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.works{
+    position: absolute;
+    top: 1504px;
+    left: 0px;
+    width: 1440px;
+    height: 651px;
+    opacity: 1;
+}
+.works .title01{
+    position: absolute;
+    top: 40px;
+    left: 595px;
+    width: 250px;
+    height: 134px;
+    background: transparent url('img/title01.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.works .dog-group{
+    position: absolute;
+    top: 214px;
+    left: 60px;
+    width: 1320px;
+    height: 312px;
+    opacity: 1;
+}
+.works .dog-group ul{
+    display: flex;
+    justify-content: space-around;
+}
+.works .dog-group ul li#dog05{
+    position: absolute;
+    left: 0px;
+    width: 312px;
+    height: 312px;
+    background: transparent url('img/dog05.png') 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    opacity: 1;
+}
+.works .dog-group ul li#dog07{
+    position: absolute;
+    left: 336px;
+    width: 312px;
+    height: 312px;
+    background: transparent url('img/dog07.png') 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    opacity: 1;
+}
+.works .dog-group ul li#dog06{
+    position: absolute;
+    right: 336px;
+    width: 312px;
+    height: 312px;
+    background: transparent url('img/dog06.png') 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    opacity: 1;
+}
+.works .dog-group ul li#Michael{
+    position: absolute;
+    left: 1008px;
+    width: 312px;
+    height: 312px;
+    background: transparent url('img/Michael.png') 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    opacity: 1;
+}
+.works .btn-outline{
+    position: absolute;
+    top: 576px;
+    left: 492px;
+    width: 216px;
+    height: 44px;
+    border: 1px solid #3A3A3A;
+    border-radius: 23px;
+    opacity: 1;
+}
+.works .btn-outline{
+    position: absolute;
+    top: 576px;
+    left: 492px;
+    width: 216px;
+    height: 44px;
+    border: 1px solid #3A3A3A;
+    border-radius: 23px;
+    opacity: 1;
+}
+.works .btn-outline:hover{
+    cursor: pointer;
+    background: #F9C745 0% 0% no-repeat padding-box;
+    border: 1px solid #F9C745;
+    border-radius: 23px;
+    opacity: 1;
+}
+.works .btn-fill{
+    position: absolute;
+    top: 576px;
+    left: 732px;
+    width: 236px;
+    height: 44px;
+    background: #F9C745 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    opacity: 1;
+}
+.works .btn-fill:hover{
+    cursor: pointer;
+    background: #F9C745 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 0px #3A3A3A;
+    border-radius: 23px;
+    opacity: 1;
+}
+.works .btn-outline p{
+    text-align: center;
+    font: normal normal normal 20px/2 Noto Sans;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+    
+}
+.works .btn-outline a{
+    text-decoration: none;
+}
+.works .btn-fill p{
+    text-align: center;
+    font: normal normal normal 20px/2 Noto Sans;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.works .btn-fill a{
+    text-decoration: none;
+}
+.adopts{
+    position: absolute;
+    top: 2153px;
+    left: 0px;
+    width: 1440px;
+    height: 1064px;
+    opacity: 1;
+}
+.adopts .title02{
+    position: absolute;
+    top: 42px;
+    left: 595px;
+    width: 250px;
+    height: 134px;
+    background: transparent url('img/title02.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.adopts p{
+    position: absolute;
+    top: 200px;
+    left: 472px;
+    width: 496px;
+    height: 22px;
+    text-align: center;
+    font: normal normal normal 16px/22px Noto Sans;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.adopts .dog-card1{
+    position: absolute;
+    top: 270px;
+    left: 60px;
+    width: 424px;
+    height: 621px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 8px #00000014;
+    border-radius: 24px;
+    opacity: 1;
+}
+.adopts .dog-card1 .dog01{
+    /* Layout Properties */
+    width: 424px;
+    height: 424px;
+    /* UI Properties */
+    background: transparent url('img/dog01.png') 0% 0% no-repeat padding-box;
+    border-radius: 24px 24px 0px 0px;
+    opacity: 1;
+}
+.adopts .dog-card1 .dog01:hover{
+    cursor: pointer;
+    width: 424px;
+    height: 424px;
+    background: transparent url('img/dog01-hover.png') 0% 0% no-repeat padding-box;
+    border-radius: 24px 24px 0px 0px;
+    opacity: 1;
+}
+.adopts .dog-card1 h1{
+    position: absolute;
+    top: 454px;
+    left: 24px;
+    width: 90px;
+    height: 22px;
+    text-align: left;
+    font: normal normal bold 16px/22px Noto Sans;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.adopts .dog-card1 p{
+    position: absolute;
+    top: 492px;
+    left: 24px;
+    width: 376px;
+    height: 46px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 16px/24px Noto Sans;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.adopts .dog-card1 h2{
+    position: absolute;
+    top: 580px;
+    left: 192px;
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    font: normal normal bold 16px/25px Kalam;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.adopts .dog-card1 h2:hover{
+    cursor: pointer;
+    color: #F9C745;
+}
+.adopts .dog-card2{
+    position: absolute;
+    top: 270px;
+    left: 508px;
+    width: 424px;
+    height: 621px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 8px #00000014;
+    border-radius: 24px;
+    opacity: 1;
+}
+.adopts .dog-card2 .dog02:hover{
+    cursor: pointer;
+    width: 424px;
+    height: 424px;
+    background: transparent url('img/dog02-hover.png') 0% 0% no-repeat padding-box;
+    border-radius: 24px 24px 0px 0px;
+    opacity: 1;
+}
+.adopts .dog-card2 .dog02{
+    /* Layout Properties */
+    width: 424px;
+    height: 424px;
+    /* UI Properties */
+    background: transparent url('img/04.png') 0% 0% no-repeat padding-box;
+    border-radius: 24px 24px 0px 0px;
+    opacity: 1;
+}
+.adopts .dog-card2 h1{
+    position: absolute;
+    top: 454px;
+    left: 24px;
+    width: 90px;
+    height: 22px;
+    text-align: left;
+    font: normal normal bold 16px/22px Noto Sans;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.adopts .dog-card2 p{
+    position: absolute;
+    top: 492px;
+    left: 24px;
+    width: 376px;
+    height: 46px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 16px/24px Noto Sans;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.adopts .dog-card2 h2{
+    position: absolute;
+    top: 580px;
+    left: 192px;
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    font: normal normal bold 16px/25px Kalam;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.adopts .dog-card2 h2:hover{
+    cursor: pointer;
+    color: #F9C745;
+}
+.adopts .dog-card3{
+    position: absolute;
+    top: 270px;
+    left: 956px;
+    width: 424px;
+    height: 621px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 8px #00000014;
+    border-radius: 24px;
+    opacity: 1;
+}
+.adopts .dog-card3 .dog03:hover{
+    cursor: pointer;
+    width: 424px;
+    height: 424px;
+    background: transparent url('img/dog03-hover.png') 0% 0% no-repeat padding-box;
+    border-radius: 24px 24px 0px 0px;
+    opacity: 1;
+}
+.adopts .dog-card3 .dog03{
+    /* Layout Properties */
+    width: 424px;
+    height: 424px;
+    /* UI Properties */
+    background: transparent url('img/08.png') 0% 0% no-repeat padding-box;
+    border-radius: 24px 24px 0px 0px;
+    opacity: 1;
+}
+.adopts .dog-card3 h1{
+    position: absolute;
+    top: 454px;
+    left: 24px;
+    width: 100px;
+    height: 22px;
+    text-align: left;
+    font: normal normal bold 16px/22px Noto Sans;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.adopts .dog-card3 p{
+    position: absolute;
+    top: 492px;
+    left: 24px;
+    width: 376px;
+    height: 46px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 16px/24px Noto Sans;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.adopts .dog-card3 h2{
+    position: absolute;
+    top: 580px;
+    left: 192px;
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    font: normal normal bold 16px/25px Kalam;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.adopts .dog-card3 h2:hover{
+    cursor: pointer;
+    color: #F9C745;
+}
+.adopts .btn-more{
+    position:absolute;
+    top: 949px;
+    left: 612px;
+    width: 216px;
+    height: 44px;
+    border: 1px solid #3A3A3A;
+    border-radius: 23px;
+    opacity: 1;
+}
+.adopts .btn-more h2{
+    text-align: center;
+    font: normal normal normal 20px/2 Noto Sans;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.adopts .btn-more:hover{
+    cursor: pointer;
+    background: #F9C745 0% 0% no-repeat padding-box;
+    border: 1px solid #F9C745;
+    border-radius: 23px;
+    opacity: 1;
+}
+
+/* footer */
+.footer{
+    position: absolute;
+    top: 3217px;
+    left: -2px;
+    width: 1444px;
+    height: 298px;
+    opacity: 1;
+    border-top: #F9C745 solid 3px;
+}
+.footer .contact .contact01{
+    position: absolute;
+    top: 48px;
+    left: 232px;
+    width: 464px;
+    height: 127px;
+    opacity: 1;
+}
+.footer .contact .contact01 .link01{
+    
+    left: 232px;
+    width: 200px;
+    height: 127px;
+    background: transparent url('img/link01.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.footer .contact .contact01 h2{
+    position: absolute;
+    top: 7px;
+    left: 224px;
+    width: 144px;
+    height: 33px;
+    text-align: left;
+    font: normal normal normal 24px/33px Noto Sans;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.footer .contact .contact01 p{
+    position: absolute;
+    top: 45px;
+    left: 224px;
+    width: 240px;
+    height: 22px;
+    text-align: left;
+    font: normal normal normal 16px/22px Noto Sans;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.footer .contact .contact01 .btn-contactus{
+    position: absolute;
+    top: 81px;
+    left: 224px;
+    width: 176px;
+    height: 44px;
+    border: 1px solid #3A3A3A;
+    border-radius: 23px;
+    opacity: 1;
+}
+.footer .contact .contact01 .btn-contactus:hover{
+    cursor: pointer;
+    background: #F9C745 0% 0% no-repeat padding-box;
+    border: 1px solid #F9C745;
+    border-radius: 23px;
+    opacity: 1;
+}
+.footer .contact .contact01 .btn-contactus h3{
+    text-align: center;
+    font: normal normal normal 20px/2 Noto Sans;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.footer .contact02{
+    position: absolute;
+    top: 48px;
+    left: 744px;
+    width: 464px;
+    height: 119px;
+    opacity: 1;
+}
+.footer .contact02 .link02{
+    position: absolute;
+    width: 200px;
+    height: 105px;
+    background: transparent url('img/link02.png') 0% 0% no-repeat padding-box;
+    border-radius: 53px;
+    opacity: 1;
+}
+.footer .contact02 h2{
+    position: absolute;
+    top: 7px;
+    left: 224px;
+    width: 144px;
+    height: 33px;
+    text-align: left;
+    font: normal normal normal 24px/33px Noto Sans;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.footer  .contact02 p{
+    position: absolute;
+    top: 45px;
+    left: 224px;
+    width: 240px;
+    height: 22px;
+    text-align: left;
+    font: normal normal normal 16px/22px Noto Sans;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.footer .contact .contact02 .btn-adoptarea{
+    position: absolute;
+    top: 81px;
+    left: 224px;
+    width: 176px;
+    height: 44px;
+    border: 1px solid #3A3A3A;
+    border-radius: 23px;
+    opacity: 1;
+}
+.footer .contact .contact02 .btn-adoptarea:hover{
+    cursor: pointer;
+    background: #F9C745 0% 0% no-repeat padding-box;
+    border: 1px solid #F9C745;
+    border-radius: 23px;
+    opacity: 1;
+}
+.footer .contact .contact02 .btn-adoptarea h3{
+    text-align: center;
+    font: normal normal normal 20px/2 Noto Sans;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+.footer .copyright{
+    position: absolute;
+    top: 225px;
+    left: -2px;
+    width: 1444px;
+    height: 70px;
+    background: #3A3A3A 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.footer .copyright p{
+    position: absolute;
+    top: 24px;
+    left: 556px;
+    width: 328px;
+    height: 22px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal normal 16px/22px Noto Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
